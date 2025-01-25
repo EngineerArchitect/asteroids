@@ -18,13 +18,10 @@ def main():
             if event.type == pygame.QUIT:
                 return
 
-        screen.fill("black")
-        
         player.update(dt)
-        
-        # Render Player
-        player.draw(screen)
-        
+
+        screen.fill("black")
+        player.draw(screen)        
         pygame.display.flip()
 
         # Cap the frame rate to 60 FPS and calculate delta time
